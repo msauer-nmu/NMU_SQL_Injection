@@ -1,0 +1,28 @@
+#!/bin/sh
+
+#REGISTRY=staging2.nofluffjuststuff.com:9443
+
+#docker pull staging2.nofluffjuststuff.com:9443/nfjsweb
+
+docker rm -f tomcat1
+
+docker run --name tomcat1 \
+            -p 8080:8080 \
+            --link nfjsmq \
+            -v ~/workspace/data/nfjs:/opt/nfjs \
+            -v ~/workspace/data/nfjs/data/container-config:/opt/nfjs/config \
+            -v ~/workspace/data/nfjs/logs/tomcat1:/opt/nfjs/data/logs \
+            -v ~/workspace/data/nfjs/logs/tomcat1:/usr/local/tomcat/logs \
+            --env "JAVA_OPTS=-Xms512M -Xmx2048M -Dinstance.id=tomcat1 -Dpodname=nfjsweb-test" \
+            -d nfjsweb
+
+#--env "JAVA_OPTS=-Xms512M -Xmx2048M -Dinstance.id=tomcat1 -Dpodname=nfjsweb-test" \
+
+#            -d staging2.nofluffjuststuff.com:9443/nfjsweb
+
+#            -m 512m \
+
+#            -d nfjsweb
+
+
+#            -d staging.nofluffjuststuff.com:5000/nfjstomcat
