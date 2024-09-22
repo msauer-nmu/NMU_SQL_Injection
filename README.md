@@ -1,4 +1,4 @@
-# startrek_payroll
+# UPCI_Payroll
 
 A simple SQL injection vulnerable web application powered by Docker
 
