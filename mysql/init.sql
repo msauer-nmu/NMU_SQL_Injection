@@ -39,13 +39,11 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`username`, `first_name`, `last_name`, `password`, `salary`) VALUES
-('james_kirk','James','Kirk','kobayashi_maru','25000'),
-('mr_spock','Mr','Spock','0nlyL0g!c','99000'),
-('leonard_mccoy','Leonard','McCoy','hesDEADjim!','45000'),
-('nyota_uhura','Nyota','Uhura','StarShine','39000'),
-('montgomery_scott','Montgomery','Scott','ScottyDoesntKnow','1250'),
-('hiraku_sulu','Hikaru','Sulu','parking-break-on','3500'),
-('pavel_chekov','Pavel','Chekov','99victorvictor2','2500');
+('jim_james,'Jim','James','VictoryDance!','100000'),
+('tom_blankenship','Tom','Blankenship','BassMan98','99000'),
+('patrick_halllahan','Patrick','Hallahan','KeepTheBeat02','80000'),
+('bo_koster','Bo','Koster','WhiteKeys04','65000'),
+('carl_broemel','Carl','Broemel','LesPaul04','75000');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
