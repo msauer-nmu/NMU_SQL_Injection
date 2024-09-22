@@ -30,7 +30,7 @@ Clean the Docker environment (after making changes):
 
 1. Normal login to get users salary:
     - `username`: `jim_james`
-    - `password`: `VictoryDance!
+    - `password`: `VictoryDance!`
 
 2. Dump username and salary of all users:
     - `username`: `' OR 1=1#`
