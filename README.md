@@ -29,8 +29,8 @@ Clean the Docker environment (after making changes):
 ## Example Payloads
 
 1. Normal login to get users salary:
-    - `username`: `james_kirk`
-    - `password`: `kobayashi_maru`
+    - `username`: `jim_james`
+    - `password`: `VictoryDance!
 
 2. Dump username and salary of all users:
     - `username`: `' OR 1=1#`
