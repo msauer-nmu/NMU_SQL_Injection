@@ -3,8 +3,8 @@ version: '3'
 services:
 
   mysql:
-    image: startrek-payroll-mysql
-    container_name: startrek-payroll-mysql
+    image: upci-payroll-mysql
+    container_name: upci-payroll-mysql
     restart: unless-stopped
     build:
       context: mysql
@@ -23,8 +23,8 @@ services:
       - backend
 
   php:
-    image: startrek-payroll-php
-    container_name: startrek-payroll-php
+    image: upci-payroll-php
+    container_name: upci-payroll-php
     restart: unless-stopped
     build:
       context: php
@@ -42,8 +42,8 @@ services:
       - backend
 
   nginx:
-    image: startrek-payroll-nginx
-    container_name: startrek-payroll-nginx
+    image: upci-payroll-nginx
+    container_name: upci-payroll-nginx
     restart: unless-stopped
     build:
       context: nginx

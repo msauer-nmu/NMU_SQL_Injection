@@ -1,9 +1,7 @@
 -- phpMyAdmin SQL Dump
 -- version 3.5.8
 -- http://www.phpmyadmin.net
---
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2017 at 04:42 PM
 -- Server version: 5.5.54-0ubuntu0.14.04.1
 -- PHP Version: 5.4.5
 
