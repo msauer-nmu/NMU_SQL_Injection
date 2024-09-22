@@ -19,8 +19,8 @@ if (!isset($_POST['s'])) {
     xmlns:xlink="http://www.w3.org/1999/xlink" 
     x="0px" 
     y="0px"
-    width="70%" 
-    height="70%"
+    width="30%" 
+    height="30%"
     viewBox="0 0 6166 3184" 
     enable-background="new 0 0 6166 3184" 
     xml:space="preserve">
@@ -3708,7 +3708,7 @@ if ($_POST) {
     error_log("USERNAME:" . $user);
     $pass = $_POST['password'];
     error_log("PASSWORD:" . $pass);
-    $sql = "select username, salary from users where username = '$user' and password = '$pass'";
+    $sql = "select first_name, last_name, username, salary from users where username = '$user' and password = '$pass'";
     error_log("QUERY:" . $sql);
 
     if ($conn->multi_query($sql)) {
@@ -3717,7 +3717,7 @@ if ($_POST) {
             echo "<center>";
             echo "<h2>Welcome, " . $user . "</h2><br>";
             echo "<table style='border-radius: 25px; border: 2px solid black;' cellspacing=30>";
-            echo "<tr><th>Username</th><th>Salary</th></tr>";
+            echo "<tr><th>First Name</th><th>Last Name</th><th>Username</th><th>Salary</th></tr>";
             if ($result = $conn->store_result()) {
                 while ($row = $result->fetch_assoc()) {
                     $keys = array_keys($row);

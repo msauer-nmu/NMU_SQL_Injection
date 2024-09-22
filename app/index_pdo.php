@@ -27,8 +27,8 @@ if (!isset($_POST['s'])) {
     xmlns:xlink="http://www.w3.org/1999/xlink" 
     x="0px" 
     y="0px"
-    width="70%" 
-    height="70%"
+    width="30%" 
+    height="30%"
     viewBox="0 0 6166 3184" 
     enable-background="new 0 0 6166 3184" 
     xml:space="preserve">
@@ -3716,7 +3716,7 @@ if ($_POST) {
     error_log("USERNAME:" . $user);
     $pass = $_POST['password'];
     error_log("PASSWORD:" . $pass);
-    $stmt = $pdo->prepare("SELECT username, salary From users WHERE username = ? and password = ?");
+    $stmt = $pdo->prepare("SELECT first_name, last_name, username, salary FROM users WHERE username = ? and password = ?");
 
     if ($stmt->execute([$user, $pass])) {
         echo "<center>";

